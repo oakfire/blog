@@ -1,7 +1,7 @@
 doctype html
 block vars
   - var bodyclass = null;
-html(lang='en')
+html(lang='zh')
   head
     block head
       meta(charset='utf-8')
@@ -15,22 +15,31 @@ html(lang='en')
       link(rel='stylesheet', href='/css/main.css')
   body(class=bodyclass)
     header.header
-      div.content-wrap
-        block header
-          div.logo
-            h1
-              a(href=locals.url)= locals.name
-            p.description= locals.description
-    div#content
-      div.content-wrap
+      div.overlay
+      div.inner
+        a.avatar(href=locals.url)
+          img(src='/avatar.png')
+        div.logo
+          h1
+            a(href=locals.url)= locals.name
+          p.description= locals.description
+        div.header-menu
+          a(href='/index.html') Home
+          a(href='/archive.html') Archives
+          a(href='/about.html') About me
+    div.right-col
+      div#content
         block content
-          h2 Welcome to zombocom!
-    footer
-      div.content-wrap
-        block footer
-          section.about
-            !=contents['about.md'].html
-          section.copy
-            p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
-              a(href='https://github.com/jnordberg/wintersmith') Wintersmith
-              //- please leave the "powered by" if you use the design
+          div.content-wrap
+            h2 Welcome to zombocom!
+      footer
+        div.content-wrap
+          block footer
+            section.about
+              !=contents['about.md'].html
+            section.copy
+              p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
+                a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+                |  , learned theme from 
+                a(href='https://github.com/litten/hexo-theme-yilia') yilia
+                //- please leave the "powered by" if you use the design

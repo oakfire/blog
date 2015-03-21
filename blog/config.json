@@ -1,9 +1,9 @@
 {
   "locals": {
     "url": "blog.joak.org",
-    "name": "Sleeping trees",
+    "name": "Oakfire",
     "owner": "Oakfire",
-    "description": "Be still,my heart,these great trees are prayers."
+    "description": "Yes, it's a joke."
   },
   "plugins": [
     "./plugins/paginator.coffee"
@@ -21,6 +21,6 @@
     "smartypants": true
   },
   "paginator": {
-    "perPage": 3
+    "perPage": 5 
   }
 }

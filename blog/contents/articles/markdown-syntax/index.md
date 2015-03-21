@@ -1,7 +1,7 @@
 ---
 title: Markdown syntax
 author: John Gruber
-date: 2012-02-02
+date: 2015-01-01
 template: article.jade
 ---
 
