@@ -10,12 +10,7 @@ block append title
 block content
   div.content-wrap
     article.article
-      include author
       h3= page.title
-      p.author
-        span=page.date.toDateString()
-        | #{ ", Written by " }
-        mixin author(page.metadata.author)
       hr
       section.content!= typogr(page.html).typogrify()
 
