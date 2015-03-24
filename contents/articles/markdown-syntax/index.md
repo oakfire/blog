@@ -599,9 +599,9 @@ That is:
 
 The following three link definitions are equivalent:
 
-  [foo]: http://example.com/  "Optional Title Here"
-  [foo]: http://example.com/  'Optional Title Here'
-  [foo]: http://example.com/  (Optional Title Here)
+    [foo]: http://example.com/  "Optional Title Here"
+    [foo]: http://example.com/  'Optional Title Here'
+    [foo]: http://example.com/  (Optional Title Here)
 
 **Note:** There is a known bug in Markdown.pl 1.0.1 which prevents
 single quotes from being used to delimit link titles.
@@ -623,8 +623,8 @@ Link definition names may consist of letters, numbers, spaces, and
 punctuation -- but they are *not* case sensitive. E.g. these two
 links:
 
-  [link text][a]
-  [link text][A]
+    [link text][a]
+    [link text][A]
 
 are equivalent.
 
@@ -633,20 +633,20 @@ link, in which case the link text itself is used as the name.
 Just use an empty set of square brackets -- e.g., to link the word
 "Google" to the google.com web site, you could simply write:
 
-  [Google][]
+    [Google][]
 
 And then define the link:
 
-  [Google]: http://google.com/
+    [Google]: http://google.com/
 
 Because link names may contain spaces, this shortcut even works for
 multiple words in the link text:
 
-  Visit [Daring Fireball][] for more information.
+    Visit [Daring Fireball][] for more information.
 
 And then define the link:
 
-  [Daring Fireball]: http://daringfireball.net/
+    [Daring Fireball]: http://daringfireball.net/
 
 Link definitions can be placed anywhere in your Markdown document. I
 tend to put them immediately after each paragraph in which they're
