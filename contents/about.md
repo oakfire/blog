@@ -4,7 +4,6 @@ template: about.jade
 ---
 
 
- *   [my yet another blog](http://oak71.com)
+ *   [my yet another blog](http://wp.joak.org)
+ *   [my wiki](http://wiki.joak.org)
  *   [my ppt](/ppt/)
- *   [my wiki](http://wiki.oak71.com)
- *   [my bookmarks](http://joak.org)
